@@ -22,16 +22,18 @@
 
 	<div id="app">
 		<!-- NAVIGATION BAR -->
-		<nav>
-			<p>ZODIAC</p>
+		<nav class="navbar navbar-expand navbar-expand navbar-light bg-light border-bottom">
+			<a href="" class="navbar-brand">ZODIAC</a>
+
 			<!-- INPUT BOX AND BUTTON. ENTER KEY WORKS AS BUTTON SUBMIT, INPUT BOX CLEARS W. INPUT -->
-			<input type="text" name="" id="">
-			<div>
-				<button>Submit</button>
+			<input name="" type="text" id="inputSign" class="form-control mr-sm-4" placeholder="What's Your Zodiac Sign?">
+			<div class="input-group-append">
+				<button class="" onclick="getSignInfo()">Submit</button>
 				<!-- HIDDEN DROPDOWN MENU. APPEARS/HIDES WHEN ZODIACSIGN LOGO IS CLICKED. -->
-				<button>
-					<select name="" id="">
-						<option value="">Select</option>
+				<button class="">
+					<select name="" class="dropdown-item" id="zodiacList">
+						<option value="initial" disabled="true"
+						selected="selected">Select</option>
 					</select>
 				</button>
 
